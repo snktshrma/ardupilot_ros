@@ -1,0 +1,18 @@
+plugin_blacklist:
+# common
+- actuator_control
+- ftp
+- safety_area
+- hil
+# extras
+- debug_value
+- image_pub
+- px4flow
+- vibration
+- wheel_odometry
+
+plugin_whitelist:
+#- 'sys_*'
+- vision*
+- vision_speed_estimate
+- altitude

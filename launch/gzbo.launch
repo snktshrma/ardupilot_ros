@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<arg name="gui" default="true"/>
+        <include 
+            file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name"  value="worlds/iris_arducopter_runway.world"/>
+            <arg name="gui" value="$(arg gui)"/>
+	    <arg name="use_sim_time" value="true" />
+        </include>
+	<!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.0 0 0.07 0 0 0 base_link laser_scanner 30" /> -->
+	<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0.07 0 0 3.14159 base_link iris/laser 120" />
+</launch>

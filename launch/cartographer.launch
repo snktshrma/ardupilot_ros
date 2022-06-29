@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+   <launch>
+      <param name="/use_sim_time" value="true" />
+      <node name="cartographer_node"
+            pkg="cartographer_ros"
+            type="cartographer_node"
+            args="-configuration_directory $(find ardupilot_ros)/configuration_files -configuration_basename cartographer.lua"
+            output="screen">
+	    <remap from="odom" to="/mavros/local_position/odom" />
+	    <remap from="imu" to="/mavros/imu/data" />
+      </node>
+      <node name="cartographer_occupancy_grid_node"
+            pkg="cartographer_ros"
+            type="cartographer_occupancy_grid_node" />
+      <node name="robot_pose_publisher"
+            pkg="robot_pose_publisher"
+            type="robot_pose_publisher"
+            respawn="false"
+            output="screen" />
+       <node pkg="rviz" type="rviz" name="rviz"
+    	    args="-d $(find ardupilot_ros)/rviz/gmapping.rviz"/>
+	
+
+   </launch>
