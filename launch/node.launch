@@ -22,6 +22,7 @@
 		<!-- load blacklist, config -->
 		<rosparam command="load" file="$(arg pluginlists_yaml)" />
 		<rosparam command="load" file="$(arg config_yaml)" />
+		<remap from="/mavros/setpoint_position/local" to="/move_base_simple/goal" />
 		<remap from="/mavros/setpoint_velocity/cmd_vel_unstamped" to="/cmd_vel" />
 		<remap from="/mavros/vision_pose/pose" to="/robot_pose" />
 
