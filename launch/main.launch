@@ -1,0 +1,12 @@
+<launch>
+    <include file="$(find ardupilot_ros)/launch/apm.launch" />
+    <include file="$(find ardupilot_ros)/launch/cartographer.launch" />
+    <include file="$(find ap_navigation)/launch/ap_nav.launch" />
+    <node name="origin_publisher"
+            pkg="ardupilot_ros"
+            type="set_origin.py"
+            respawn="false"
+            output="screen" />
+            
+</launch>
+
