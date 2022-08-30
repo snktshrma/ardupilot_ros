@@ -2,7 +2,7 @@
 	<!-- vim: set ft=xml noet : -->
 	<!-- example launch script for ArduPilot based FCU's -->
 
-	<arg name="fcu_url" default="udp://127.0.0.1:14551@14550" />
+	<arg name="fcu_url" default="udp://:14551@" />
 	<!-- <arg name="fcu_url" default="udp://127.0.0.1:14561@" /> -->               <!-- remove comment for rover -->
 	
 	<arg name="gcs_url" default="" />
