@@ -4,7 +4,7 @@
 	<arg name="gui" default="true"/>
         <include 
             file="$(find gazebo_ros)/launch/empty_world.launch">
-            <arg name="world_name"  value="worlds/iris_arducopter_runway.world"/>
+            <arg name="world_name"  value="$(find ardupilot_ros)/worlds/iris_arducopter_runway.world"/>
             <arg name="gui" value="$(arg gui)"/>
 	    <arg name="use_sim_time" value="true" />
         </include>
