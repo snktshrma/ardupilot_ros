@@ -33,21 +33,3 @@ Then,
 ````
 roslaunch ardupilot_ros main.launch
 ````
-
-DONE !
-
-## HELP
-
-How to Launch :  
-Launch Ardupilot Software In the Loop Simulation for each vehicle.
-On new terminal, launch Gazebo with basic demo world.
-
-#####ROVER/Quadrotor (no model provided for now)
-
-On 1st Terminal (Launch Ardupilot SITL)
-````
-````
-
-On 2nd Terminal (Launch Gazebo with demo Rover model)
-````
-````
