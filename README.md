@@ -16,7 +16,7 @@ ROS Melodic or Noetic
 
 ## Usage :
 
-This package contains a central launch file launching all the required launch files in a go.
+This package contains a main launch file launching all the required launch files in a go.
 
 Simply,
 
