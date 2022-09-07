@@ -29,7 +29,7 @@ On the ardupilot latest stable, run:
 ````
 source ~/ardupilot/Tools/environment_install/install-ROS-ubuntu.sh
 ````
-This will install the whole ardupilor-ros environment and install all the requirements.
+This will install the whole ardupilot-ros environment and install all the requirements.
 
 ## Usage 2 :
 
