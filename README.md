@@ -35,7 +35,7 @@ catkin build
 ````
 
 Then,
-On 1st Terminal
+### On 1st Terminal
 ````
 roslaunch ardupilot_ros gzbo.launch #for quadrotor
 ````
@@ -44,7 +44,7 @@ or
 roslaunch ardupilot_ros gzbo_rover.launch #for rover
 ````
 
-On 2nd Terminal
+### On 2nd Terminal
 ````
 ../Tools/autotest/sim_vehicle.py -f gazebo-iris
 ````
@@ -53,7 +53,7 @@ or
 sim_vehicle.py -v APMrover2 -f gazebo-rover -m --mav10 -I1
 ````
 
-On 3rd Terminal
+### On 3rd Terminal
 ````
 roslaunch ardupilot_ros main.launch
 ````
