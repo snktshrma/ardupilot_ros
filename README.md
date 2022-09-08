@@ -40,8 +40,6 @@ Simply,
 ````
 cd <ros_ws>/src/
 git clone https://github.com/snktshrma/ardupilot_ros
-wget https://github.com/ArduPilot/companion/raw/master/Common/ROS/ap_navigation.zip
-unzip ap_navigation.zip
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 cd ardupilot_ros
