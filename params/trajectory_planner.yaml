@@ -1,0 +1,20 @@
+TrajectoryPlannerROS:
+  max_vel_x: 2.0
+  min_vel_x: 0.0
+  max_vel_theta: 1.0
+  min_vel_theta: -1.0
+  min_in_place_vel_theta: 0.25
+
+  acc_lim_theta: 0.25
+  acc_lim_x: 2.5
+  acc_lim_Y: 2.5
+
+  holonomic_robot: false
+  
+  escape_reset_dist: 5.0
+  escape_reset_theta: 1.5707963267948966
+  escape_vel: -2.0
+  
+  goal_distance_bias: 0.8
+  path_distance_bias: 0.6
+  
