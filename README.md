@@ -10,6 +10,7 @@ This package contains all the modified files for the following packages:
 mavros
 cartographer_ros
 robot_pose_publisher
+navigation
 ````
 
 ap_navigation: https://github.com/ArduPilot/companion/tree/master/Common/ROS/ap_navigation
