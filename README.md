@@ -58,7 +58,7 @@ or
 roslaunch ardupilot_ros gzbo_rover.launch #for rover
 ````
 
-### On 2nd Terminal
+### On 2nd Terminal (under ~/ardupilot/ArduCopter or ~/ardupilot/Rover)
 ````
 ../Tools/autotest/sim_vehicle.py -f gazebo-iris
 ````
