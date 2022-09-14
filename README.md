@@ -41,6 +41,7 @@ Simply,
 ````
 cd <ros_ws>/src/
 git clone https://github.com/snktshrma/ardupilot_ros
+git clone https://github.com/GT-RAIL/robot_pose_publisher.git
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 cd ardupilot_ros
